@@ -19,6 +19,13 @@
      ?>
 
      <p><?php echo $persons[0]." ". $persons[1]."  (".$persons[2].")"?> </p>
+     <?php
+         if ($first_name_begins_vowel){
+             echo "Eesnimi algab vokaaliga";
+         }
+         else
+             echo "Eesnimi ei alga vokaaliga";
+     ?>
 
 </body>
 </html>
