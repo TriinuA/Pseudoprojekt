@@ -11,6 +11,8 @@
 
     <ul>
         <li><a href="http://www.khk.ee" id="alertLink">Tere maailm!</a></li><!--3. Tere maailm link-->
+        <li><a href="http://www.khk.ee" id="alertLink2">Jääme siia!</a></li><!--4. Navigeerimatu link
+-->
     </ul>
 
 
@@ -23,6 +25,12 @@
         var oneClick = document.getElementById("alertLink");  //3. Tere maailm link
         oneClick.onclick = function() {
             alert("Tere maailm");
+        }
+
+        var oneClick2 = document.getElementById("alertLink2");  //4. Navigeerimatu link
+        oneClick2.onclick = function() {
+            alert("Jääme siia!");
+            return false;
         }
 
     </script>
