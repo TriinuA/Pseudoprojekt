@@ -12,6 +12,7 @@
         $birth_year	= 1979;
         $this_year 	= date('Y');
         $my_age = ($this_year - $birth_year);
+        $first_name_begins_vowel = false;
 
         echo("$first_name $last_name (").$my_age.(')');
      ?>
