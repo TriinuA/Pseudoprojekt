@@ -15,6 +15,8 @@
         $first_name_begins_vowel = false;
         $persons = array($first_name, $last_name, $my_age,);
         $vowels = array('A', 'E', 'I', 'O', 'U', 'Ä', 'Ö', 'Ü', 'Õ');
+        $a = 1.23;
+        $b = 2.34;
      ?>
 
      <?php
@@ -37,6 +39,10 @@
          else
              echo "Eesnimi ei alga vokaaliga";
      ?>
+     <br>
+    <?php
+        echo $a + $b;
+    ?>
 
 
 
