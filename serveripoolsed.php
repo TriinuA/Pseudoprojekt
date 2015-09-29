@@ -14,7 +14,10 @@
         $my_age = ($this_year - $birth_year);
         $first_name_begins_vowel = false;
         $persons = array($first_name, $last_name, $my_age,);
+        $vowels = array('A', 'E', 'I', 'O', 'U', 'Ä', 'Ö', 'Ü', 'Õ');
+     ?>
 
+     <?php
         echo("$first_name $last_name (").$my_age.(')');
      ?>
 
@@ -26,6 +29,17 @@
          else
              echo "Eesnimi ei alga vokaaliga";
      ?>
+     <br>
+     <?php
+         if (in_array(substr($first_name,0,1),$vowels)){
+             echo "Eesnimi algab vokaaliga";
+         }
+         else
+             echo "Eesnimi ei alga vokaaliga";
+     ?>
+
+
+
 
 </body>
 </html>
